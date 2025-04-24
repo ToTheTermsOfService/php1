@@ -1,7 +1,8 @@
 <?php
+session_start();
 $action = isset($_GET['action']) ? $_GET['action'] : 'main';
 
-$valid_actions = ['main', 'about', 'registration', 'registration_successful'];
+$valid_actions = ['main', 'about', 'registration', 'registration_successful', 'login', 'create_electronics', 'electronics', 'view_electronics', 'update_electronics'];
 if (!in_array($action, $valid_actions)) {
     $action = 'main';
 }
