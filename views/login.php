@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 // Підключення до БД (використовуємо той самий код, що й у registration.php)
 $db_host = 'localhost';

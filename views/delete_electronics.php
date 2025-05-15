@@ -1,4 +1,5 @@
 <?php
+require_once 'D:/phpThings/htdocs/dashboard/config/db.php';
 if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
     header('Location: index.php');
     exit;
